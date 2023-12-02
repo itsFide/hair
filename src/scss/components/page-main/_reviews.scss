@@ -1,0 +1,248 @@
+.reviews {
+    padding-top: 139px;
+    padding-bottom: 91px;
+    position: relative;
+    z-index: 2;
+    // .reviews__inner
+    background-image: url('../images/reviews-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -39px;
+
+    &__inner {
+        padding-left: 122px;
+    }
+
+    // .reviews__title
+
+    &__title {}
+
+    // .reviews__subtitle
+
+    &__subtitle {
+        margin-top: 15px;
+        color: var(--gray, #8B8B8B);
+
+        /* H_2 */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    // .reviews__items
+
+    &__items {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        // max-width: 1193px;
+        gap: 20px 28px;
+    }
+}
+
+.container {}
+
+.title {}
+
+.reviews-item {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    display: flex;
+    gap: 10px;
+    height: max-content;
+
+    &:nth-child(1) {
+        & .reviews-item__text p {
+            width: 91%;
+        }
+    }
+
+    &:nth-child(2) {
+        max-width: 538px;
+
+        height: 157px;
+
+        & .reviews-item__text p {
+            width: 95%;
+        }
+    }
+
+    &:nth-child(3) {
+        // height: 171px;
+    }
+
+    &:nth-child(4) {
+        & .reviews-item__text p {
+            width: 94%;
+        }
+
+        // height: 171px;
+    }
+
+    &:nth-child(5) {
+        // height: 157px;
+        max-width: 538px;
+        margin-top: -38px;
+
+        & .reviews-item__text p {
+            width: 98%;
+        }
+    }
+
+    &:nth-child(6) {
+        margin-top: -38px;
+
+        & .reviews-item__text p {
+            width: 93%;
+        }
+    }
+
+    &:nth-child(7) {
+        max-width: 43%;
+        height: 146px;
+        margin-top: -9px;
+
+    }
+
+    &:nth-child(8) {
+        max-width: 46%;
+        height: 146px;
+        margin-top: -9px;
+    }
+
+    // .reviews-item__other
+
+    &__other {
+        gap: 15px;
+        max-width: 300px;
+
+        & .reviews-item__img img {
+            border-radius: 50%;
+        }
+
+        & .reviews-item__content {
+            display: flex;
+            gap: 10px;
+        }
+
+        & .reviews-item__actions {
+            margin-top: 5px;
+        }
+    }
+
+    // .reviews-item__img
+
+    &__img {}
+
+    // .reviews-item__content
+
+    &__content {}
+
+    // .reviews-item__text
+
+    &__text {
+        & p {
+            color: var(--black);
+            font-family: "Roboto";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16.3px;
+            /* 135.833% */
+        }
+    }
+
+    // .reviews-item__actions
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    // .reviews-item__date
+
+    &__date {
+        color: #8F9396;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 133.687%;
+        /* 16.042px */
+    }
+
+    // .reviews-item__reply
+
+    &__reply {
+        color: #54585C;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        cursor: pointer;
+        line-height: 133.687%;
+        /* 16.042px */
+    }
+
+    // .reviews-item__like
+
+    &__like {
+        color: #4267B2;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+
+        &__btn {
+            margin-top: 8px;
+            transform: translateX(-17px);
+        }
+    }
+
+    // .reviews-item__main
+
+    &__main {
+        & .reviews-item__text {
+            margin-bottom: 12px;
+        }
+
+        & .reviews-item__reply {
+            color: #4267B2;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        & .reviews-item__date {
+            color: rgba(144, 148, 156, 0.60);
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    // .reviews-item__name
+
+    &__name {
+        color: #385898;
+        font-family: Roboto;
+        margin-bottom: 9px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.separate {}

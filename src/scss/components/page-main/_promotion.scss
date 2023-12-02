@@ -1,0 +1,100 @@
+.promotion {
+
+    // .promotion__inner
+    background: #BEA57D;
+    padding: 98px 0 63px 0;
+
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+
+    // .promotion__img
+
+    &__img {
+        position: absolute;
+        top: -64%;
+        left: -5%;
+    }
+
+    // .promotion__text
+
+    &__text {
+        width: 57%;
+        margin-left: auto;
+    }
+
+    // .promotion__info
+
+    &__info {
+        color: var(--black);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        opacity: 0.7;
+    }
+
+    // .promotion__subtitle
+
+    &__subtitle {
+        color: var(--black);
+        margin-top: 42px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    // .promotion__title
+
+    &__title {
+        color: var(--black);
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    // .promotion__descr
+
+    &__descr {
+        margin-top: 26px;
+        color: var(--black);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 85%;
+
+        & span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    // .promotion__btn
+
+    &__btn {
+        margin-top: 51px;
+        display: inline-flex;
+        padding: 28.5px 77.5px;
+        border-radius: 50px;
+        background: var(--btn, linear-gradient(125deg, #831717 6.86%, #BA3333 30.45%, #831717 52.69%, #BA3333 78.55%, #831717 93.98%));
+        color: var(--white, #FFF);
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+
+.container {}
+
+.btn {}

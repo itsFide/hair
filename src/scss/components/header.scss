@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    // .header__inner
+    z-index: 2;
+
+    &__inner {
+        padding: 25px 0;
+    }
+
+    // .header__logo
+}

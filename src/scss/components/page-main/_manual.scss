@@ -1,0 +1,99 @@
+.manual {
+    padding-top: 110px;
+    // .manual__title
+    position: relative;
+    z-index: 3;
+    &__title {
+        text-align: center;
+    }
+
+    // .manual__items
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url('../images/manual-arrow-left.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 179px;
+            height: 93px;
+            left: 24%;
+            top: 35%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url('../images/manual-arrow-right.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 171px;
+            height: 93px;
+
+            left: 61%;
+            top: 62%;
+
+        }
+    }
+
+    // .manual__item
+
+    &__item {
+        color: var(--banner-bg);
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 9.5px 34px;
+        border-radius: 30px;
+        border: 3px solid rgba(190, 165, 125, 0.50);
+        background: rgba(255, 242, 223, 0.31);
+        box-shadow: 0px 4px 10px 0px rgba(190, 165, 125, 0.50);
+        width: 339px;
+        height: 81px;
+
+        &:nth-child(1) {
+            transform: translate(-23%, 158%);
+        }
+
+        &:nth-child(3) {
+            transform: translate(27%, 359%);
+        }
+    }
+
+    // .manual__img
+
+    &__img {
+        & img {
+            transform: translateX(-15px);
+        }
+    }
+}
+
+.container {}
+
+.title {}
+
+.manual-banner {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 30px 108px;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background: #BEA57D;
+    width: max-content;
+    margin: 0 auto;
+}
