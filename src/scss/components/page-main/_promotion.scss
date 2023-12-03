@@ -15,6 +15,9 @@
         position: absolute;
         top: -64%;
         left: -5%;
+        &-mobile{
+            display: none;
+        }
     }
 
     // .promotion__text

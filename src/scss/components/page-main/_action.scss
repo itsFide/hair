@@ -1,26 +1,7 @@
 .action {
-    &-container__big {
-        max-width: 1920px;
-        margin: 0 auto;
-        position: relative;
-        padding-top: 315px;
-        padding-bottom: 143px;
-        z-index: 1;
-
-        &::before {
-            content: "";
-            background-image: url('../images/action-shape-blur.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100%;
-            width: 1098px;
-            position: absolute;
-            right: 0;
-            z-index: -1;
-            top: 0;
-        }
-    }
+    padding-top: 315px;
+    padding-bottom: 143px;
+    z-index: 1;
 
 
     margin-top: -229px;
@@ -87,6 +68,10 @@
 
     &__img {
         transform: rotate(-8.535deg) translate(-48px, 99px);
+    }
+
+    &-img-mobile {
+        display: none;
     }
 }
 
