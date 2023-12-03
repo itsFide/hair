@@ -501,6 +501,7 @@
     }
 
     .action {
+        background-image: url('../images/action-bg-tablet.png');
         padding-top: 294px;
         padding-bottom: 45px;
 
@@ -594,6 +595,44 @@
             }
         }
     }
+
+    .footer {
+        padding: 40px 0 20px 0;
+
+        &-cols {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &-col {
+            width: 100%;
+
+            &__warning {
+                width: 85%;
+            }
+        }
+
+        &-copyright {
+            margin-top: 60px;
+
+            &>p {
+                color: #505050;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &__item {
+                color: #505050;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration-line: underline;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -679,7 +718,7 @@
 
     .action {
         &__img {
-            margin-right: 55px;
+            margin-right: 20px;
         }
 
         &__btn {
@@ -702,6 +741,12 @@
 
     .reviews {
         background-image: url('../images/reviews-bg-tablet.svg');
+        padding-bottom: 117px;
+    }
+
+    .action {
+        padding-top: 279px;
+        padding-bottom: 92px;
     }
 }
 
@@ -1171,6 +1216,7 @@
 
     .action {
         padding-top: 266px;
+        padding-bottom: 59px;
 
         &__img {
             transform: rotate(-8.535deg) translate(-10%, 6%);
@@ -1220,6 +1266,46 @@
             font-size: 18px;
             padding: 19px 49px;
             width: 244px;
+        }
+    }
+
+    .footer {
+        padding: 40px 0 5px 0;
+
+        &-col {
+            &__text {
+                font-size: 15px;
+            }
+
+            &__warning {
+                width: 100%;
+                gap: 8px;
+                align-items: start;
+            }
+
+            &__warning p {
+                font-size: 15px;
+            }
+
+            &__warning img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &-copyright {
+            margin-top: 30px;
+            & > p{
+                font-size: 12px;
+            }
+            &__item {
+                font-size: 12px;
+            }
+
+            &__items {
+                flex-wrap: wrap;
+                gap: 0 6px;
+            }
         }
     }
 }

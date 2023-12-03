@@ -61,3 +61,29 @@ body {
         color: var(--red);
     }
 }
+
+.btn {
+    animation: animate-pulse 3s linear infinite;
+}
+
+@keyframes animate-pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #831717, 0 0 0 0 #831717;
+        box-shadow: 0 0 0 0 #831717, 0 0 0 0 #831717;
+    }
+
+    40% {
+        -webkit-box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 0 #831717;
+        box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 0 #831717;
+    }
+
+    80% {
+        -webkit-box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+        box-shadow: 0 0 0 50px rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+        box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+    }
+}
