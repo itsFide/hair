@@ -1,0 +1,137 @@
+.shipping-container {}
+
+.modal-form--section {
+    margin-top: 50px;
+    padding-bottom: 52px;
+}
+
+.modal-form {
+
+    // .modal-form__fields
+
+    &__fields {
+        width: 700px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        border: 1px solid #E8E8F0;
+        border-radius: 12px;
+    }
+
+    // .modal-form__item
+
+    &__item {
+        padding: 15px 40px;
+        height: 80px;
+        border-bottom: 1px solid #E8E8F0;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &.error label {
+            color: red;
+        }
+
+        & label {
+            color: #080F0F;
+
+            /* text_input_1 */
+            font-size: 16px;
+            margin-bottom: 7px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        & input {
+            // color: var(--gray, #8B8B8B);
+            color: var(--black);
+            /* text_input_2 */
+            font-family: Public Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            &::placeholder {
+                color: var(--gray, #8B8B8B);
+            }
+        }
+
+        & select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            display: block;
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            padding: 0;
+            outline: none;
+            background-image: url('../images/select-carret.svg');
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-position-y: 50%;
+            color: var(--gray, #8B8B8B);
+
+            /* text_input_2 */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    // .modal-form__item--2
+
+    &__item--2 {}
+
+    // .modal-form__btn
+
+    &__btn {
+        margin: 66px auto 0 auto;
+        display: flex;
+        justify-content: center;
+
+        & button {
+            padding: 16px 52px;
+            border-radius: 30px;
+            background: var(--red-btn, linear-gradient(125deg, #831717 6.86%, #BA3333 30.45%, #831717 52.69%, #BA3333 78.55%, #831717 93.98%));
+            color: var(--white, #FFF);
+            text-align: center;
+            cursor: pointer;
+            /* H_2 */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.input {}
+
+.form-control {}
+
+.error {}
+
+.btn {
+
+    // .btn_step-2
+
+    &_step-2 {}
+}
+
+.modal {
+
+    // .modal__partners
+
+    &__partners {
+        display: flex;
+        justify-content: center;
+        margin-top: 37px;
+    }
+}

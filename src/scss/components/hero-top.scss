@@ -1,0 +1,107 @@
+.shipping-hero {
+    background-image: url('../images/shipping-hero-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // .shipping-hero__inner
+    padding-top: 87px;
+    padding-bottom: 94px;
+
+    &__inner {}
+}
+
+.shipping-container {
+    max-width: 1194px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.shipping-certificates {
+    display: flex;
+    gap: 48px;
+    // .shipping-certificates__item
+
+    &__item {}
+}
+
+.shipping-steps {
+    max-width: 679px;
+    margin: 33px auto 0 auto;
+    display: flex;
+    background-color: #AB936D;
+    padding: 30px 22px;
+    gap: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.shipping {
+    &__date {
+        margin-top: 22px;
+
+        & h2 {
+            color: var(--black);
+            text-align: center;
+            /* H_2 */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        & p {
+            color: var(--red, #831717);
+            text-align: center;
+            margin-top: 15px;
+            /* text_1 */
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            width: 56%;
+            margin: 15px auto 0 auto;
+        }
+    }
+
+
+
+    // .shipping__step
+
+    &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.80);
+
+        /* H_2 */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    // .shipping__title
+
+    &__title {
+        text-align: center;
+        margin-top: 60px;
+    }
+}
+
+.order-pages {
+    & .header {
+        &__inner {
+            padding: 10px 0;
+        }
+
+        &__logo {
+            & img {
+                width: 126px;
+            }
+        }
+    }
+}
