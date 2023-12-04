@@ -299,7 +299,7 @@ if (confirmPage) {
 
     const confirmFirstStep = document.querySelector(".confirm-first__step");
     const cardStep = document.querySelector(".card__step");
-    const targetBlock = document.querySelector('.modal-product-event__title');
+    const targetBlock = document.querySelector('.shipping__title');
     // const productsAddressInfo = document.querySelector('.modal-products__address__info')
     // productsAddressInfo.innerHTML = JSON.parse(localStorage.getItem('obj')).address
     let packages = document.querySelectorAll('.shipping__package--select')

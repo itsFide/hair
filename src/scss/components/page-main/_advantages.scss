@@ -36,7 +36,11 @@
 
     // .advantages__img
 
-    &__img {}
+    &__img {
+        & img{
+            width: 567px;
+        }
+    }
 }
 
 .container {}

@@ -95,7 +95,8 @@
 
     &:nth-child(6) {
         margin-top: -38px;
-
+        height: 165px;  
+        margin-bottom: 10px;
         & .reviews-item__text p {
             width: 93%;
         }
@@ -104,6 +105,7 @@
     &:nth-child(7) {
         max-width: 562px;
         height: 146px;
+        margin-right: 13px;
         margin-top: -9px;
 
     }
