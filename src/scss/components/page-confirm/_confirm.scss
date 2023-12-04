@@ -12,6 +12,10 @@
         margin-top: 42px;
         padding-bottom: 143px;
     }
+
+    & .shipping-container {
+        overflow-x: hidden;
+    }
 }
 
 .shipping-container {}
@@ -21,7 +25,8 @@
     // .confirm-first__step
 
     &__step {
-        display: none;
+        transition: all .5s ease-in-out;
+        // display: none;
     }
 }
 
@@ -376,7 +381,10 @@
 }
 
 .card__step {
+    display: none;
     padding-bottom: 53px;
+    transition: all .5s ease-in-out;
+    transform: translateX(150%);
 }
 
 .modal-card__top {

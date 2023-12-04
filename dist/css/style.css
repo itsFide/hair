@@ -286,6 +286,67 @@ body {
   }
 }
 
+.overlay2 {
+  position: fixed;
+  z-index: 1000000000000000000000000000;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in;
+}
+
+.modal2 {
+  width: 60vw;
+  position: relative;
+  top: 43vh;
+  background: white;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: black;
+  padding: 16px 30px 30px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.modal_header span {
+  display: block;
+  height: 21px;
+  width: 0;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.modal_header span:last-child {
+  transform: rotate(310deg);
+  position: relative;
+  right: 4px;
+  bottom: 0px;
+}
+
+.modal_header span:first-child {
+  transform: rotate(50deg);
+}
+
+.modal_header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.loading_wr-active {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.error123 input {
+  border: 2px solid #ff6d6d;
+}
+
 @keyframes animate-pulse {
   0% {
     box-shadow: 0 0 0 0 #831717, 0 0 0 0 #831717;
@@ -1251,14 +1312,14 @@ body {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 25px;
-  border: 1px solid #E8E8F0;
+  border: 1px solid rgba(131, 23, 23, 0.5);
   border-radius: 12px;
 }
 
 .modal-form__item {
   padding: 15px 40px;
   height: 80px;
-  border-bottom: 1px solid #E8E8F0;
+  border-bottom: 1px solid rgba(131, 23, 23, 0.5);
   display: flex;
   flex-direction: column;
 }
@@ -1321,6 +1382,12 @@ body {
   line-height: normal;
 }
 
+.modal-form__item select:disabled {
+  -webkit-text-fill-color: #fff;
+  opacity: 1;
+  color: var(--black) !important;
+}
+
 .modal-form__btn {
   margin: 66px auto 0 auto;
   display: flex;
@@ -1362,8 +1429,12 @@ body {
   padding-bottom: 143px;
 }
 
+.confirm .shipping-container {
+  overflow-x: hidden;
+}
+
 .confirm-first__step {
-  display: none;
+  transition: all 0.5s ease-in-out;
 }
 
 .modal-product-event__title {
@@ -1654,7 +1725,10 @@ body {
 }
 
 .card__step {
+  display: none;
   padding-bottom: 53px;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(150%);
 }
 
 .modal-card__top {
@@ -3887,6 +3961,8 @@ body {
   .modal__garantee img {
     width: 74px;
     height: 83px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .modal__garantee h2 {

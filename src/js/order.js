@@ -131,7 +131,7 @@ if (shipping) {
             }
             else {
                 loadingElement.classList.add('loading_wr-active'),
-                    window.location.href = '/confirm'
+                    window.location.href = '/confirm.html'
             }
 
 
@@ -299,9 +299,9 @@ if (confirmPage) {
 
     const confirmFirstStep = document.querySelector(".confirm-first__step");
     const cardStep = document.querySelector(".card__step");
-    const targetBlock = document.querySelector('.modal-product__title');
-    const productsAddressInfo = document.querySelector('.modal-products__address__info')
-    productsAddressInfo.innerHTML = JSON.parse(localStorage.getItem('obj')).address
+    const targetBlock = document.querySelector('.modal-product-event__title');
+    // const productsAddressInfo = document.querySelector('.modal-products__address__info')
+    // productsAddressInfo.innerHTML = JSON.parse(localStorage.getItem('obj')).address
     let packages = document.querySelectorAll('.shipping__package--select')
     packages.forEach(i => {
         i.onclick = function () {
@@ -494,8 +494,8 @@ if (confirmPage) {
 const thanksPage = document.getElementById('thanks-page')
 
 if (thanksPage) {
-    document.querySelectorAll('.product-total-stat__value')[1].textContent = '$' + JSON.parse(localStorage.getItem('obj2')).price
-    document.querySelectorAll('.product-total-stat__value')[3].textContent = '$' + JSON.parse(localStorage.getItem('obj2')).price
+    // document.querySelectorAll('.product-total-stat__value')[1].textContent = '$' + JSON.parse(localStorage.getItem('obj2')).price
+    // document.querySelectorAll('.product-total-stat__value')[3].textContent = '$' + JSON.parse(localStorage.getItem('obj2')).price
 
     const orderPlaced = document.getElementById('orderPlaced'),
         state3 = document.querySelectorAll('.state3'),

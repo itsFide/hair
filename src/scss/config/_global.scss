@@ -191,6 +191,67 @@ body {
 
 
 
+.overlay2 {
+    position: fixed;
+    z-index: 999999999999999999999999999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in;
+}
+
+.modal2 {
+    width: 60vw;
+    position: relative;
+    top: 43vh;
+    background: white;
+    height: fit-content;
+    color: black;
+    padding: 16px 30px 30px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.modal_header span {
+    display: block;
+    height: 21px;
+    width: 0;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.modal_header span:last-child {
+    transform: rotate(310deg);
+    position: relative;
+    right: 4px;
+    bottom: 0px;
+}
+
+.modal_header span:first-child {
+    transform: rotate(50deg);
+}
+
+.modal_header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+
+.loading_wr-active {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.error123 input {
+    border: 2px solid #ff6d6d;
+}
+
 @keyframes animate-pulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 #831717, 0 0 0 0 #831717;
